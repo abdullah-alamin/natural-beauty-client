@@ -6,7 +6,7 @@ function CreateProject() {
     const handleSubmit= (e)=>{
         const data= {name, imageURL};
 
-        fetch('http://localhost:3001/addBeauty', {
+        fetch('https://protected-brook-00209.herokuapp.com/addBeauty', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

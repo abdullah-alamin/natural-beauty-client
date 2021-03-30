@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function ShowProject() {
     const [beauties, setBeauties]= useState([]);
     useEffect(()=> {
-        fetch('http://localhost:3001/allBeauty')
+        fetch('https://protected-brook-00209.herokuapp.com/allBeauty')
         .then(res=> res.json())
         .then(data=> setBeauties(data))
     },[])
